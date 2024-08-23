@@ -1,0 +1,160 @@
+/* Reseta margens e preenchimentos padrão, define box-sizing e fonte global */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+* {
+  margin: 0; /* Remove a margem padrão dos elementos */
+  padding: 0; /* Remove o preenchimento padrão dos elementos */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo da largura e altura */
+  font-family: 'Pixelify Sans'; /* Define a fonte padrão do documento */
+  
+}
+
+/* Estiliza o contêiner geral que ocupa toda a tela */
+.container-geral {
+  height: 100vh; /* Define a altura para 100% da altura da viewport */
+  width: 100vw; /* Define a largura para 100% da largura da viewport */
+  display: flex; /* Usa Flexbox para o layout */
+  justify-content: center; /* Centraliza o contêiner interno horizontalmente */
+  align-items: center; /* Centraliza o contêiner interno verticalmente */
+  background: rgb(126,63,201);
+  background: linear-gradient(160deg, rgba(126,63,201,1) 0%, rgba(55,4,102,1) 100%);/* Estiliza o contêiner principal */
+}
+  .container {
+  width: 40%; /* Define a largura para 80% da largura do contêiner pai */
+  height: 70%; /* Define a altura para 70% da altura do contêiner pai */
+  background:rgba(255,255,255, 0.3);
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao redor do contêiner */
+  padding: 20px; /* Adiciona preenchimento interno */
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  
+}
+.busca{
+  position: fixed;
+  top: 5%;
+  color: #f8f1f1;
+  font-size: 40px;
+}
+
+
+/* Estiliza o cabeçalho superior */
+.header-top {
+  background-color: #131413; /* Define a cor de fundo do cabeçalho */
+  color: white; /* Define a cor do texto como branca */
+  padding: 15px; /* Adiciona preenchimento interno */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+}
+
+/* Estiliza o elemento <main> */
+main {
+  display: flex; /* Usa Flexbox para o layout */
+  width: 100%; /* Ocupa toda a largura disponível */
+  justify-content: space-between; /* Distribui espaço igual entre os itens */
+  align-items: center; /* Centraliza verticalmente os itens */
+}
+
+/* Estiliza o formulário */
+.form {
+  display: flex; /* Usa Flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: flex-start; /* Alinha o conteúdo ao início (esquerda) */
+  align-items: flex-start; /* Alinha o conteúdo ao início (esquerda) */
+  text-align: left; /* Alinha o texto à esquerda */
+  width: 50%; /* Ocupa 50% da largura do elemento pai */
+  margin-right: 20px; /* Adiciona espaço à direita do formulário */
+}
+
+/* Estiliza o título dentro do formulário */
+.form h1 {
+  font-size: 1.8em; /* Define o tamanho da fonte do título */
+  color: #333; /* Define a cor do texto */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+/* Estiliza o campo de entrada do formulário */
+.form input {
+  outline: none; /* Remove a borda de foco padrão */
+  padding: 10px; /* Adiciona preenchimento interno */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: 1px solid #ddd; /* Define a borda do campo de entrada */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+  width: 80%; /* Define a largura do campo de entrada */
+  max-width: 400px; /* Define a largura máxima do campo de entrada */
+  margin-bottom: 10px; /* Adiciona espaço abaixo do campo de entrada */
+  position: fixed;
+  top: 19%;
+  left: 40%;
+}
+
+/* Estiliza o botão dentro do formulário */
+.form button {
+  padding: 10px 20px; /* Adiciona preenchimento interno */
+  font-size: 1em; /* Define o tamanho da fonte */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+  background-color: #555bf6;
+  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+  align-self: flex-start; /* Alinha o botão à esquerda dentro do formulário */
+  position: absolute;
+  top: 25%;
+  left: 47%;
+}
+
+/* Estiliza o botão ao passar o cursor sobre ele */
+.form button:hover {
+  background-color: #3e43cf; /* Muda a cor de fundo do botão quando o cursor está sobre ele */
+}
+
+/* Estiliza o contêiner de conteúdo */
+.conteudo {
+  display: flex; /* Usa Flexbox para o layout */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  min-height: 400px; /* Define uma altura mínima para a expansão para baixo */
+  width: 500px; /* Ocupa 50% da largura do elemento pai */
+  border-radius: 10px;
+  position: absolute;
+  top: 32%;
+  left: 37%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao redor do contêiner */
+
+}
+
+/* Estiliza o texto dentro da div .conteudo */
+.conteudo div {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza a imagem dentro do contêiner de conteúdo */
+.conteudo img {
+  border-radius: 50%; /* Adiciona bordas arredondadas para formar um círculo */
+  width: 150px; /* Define a largura da imagem */
+  height: 150px; /* Define a altura da imagem */
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+}
+
+/* Estiliza o título dentro do contêiner de conteúdo */
+.conteudo h1 {
+  font-size: 24px; /* Define o tamanho da fonte do título */
+  color: #f8f1f1; /* Define a cor do texto */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estiliza o parágrafo dentro do contêiner de conteúdo */
+.conteudo p {
+  font-size: 1.2em; /* Define o tamanho da fonte do parágrafo */
+  color: #cfcfcf; /* Define a cor do texto */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.imagem{
+  height: 30px;
+  position: fixed;
+  top: 6.7%;
+  left: 64.6%;
+
+}
